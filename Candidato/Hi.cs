@@ -12,10 +12,17 @@ public static class Hi
 
     public static List<Rua> RuasVisitar(List<Casa> casas)
     {
-        if(casas.Count() == 0)
-            return new List<Rua>();
+        try
+        {
+            if(casas.Count() == 0)
+                return new List<Rua>();
 
-        var ruas = HiService.GetRuasVisita(casas);
-        return ruas;
+            var ruas = HiService.GetRuasVisita(casas);
+            return ruas;
+        }
+        catch(Exception ex)
+        {
+            throw new Exception("Algo ocorreu fora do esperado. Consulte a equipe responsável!");
+        }
     }
 }
