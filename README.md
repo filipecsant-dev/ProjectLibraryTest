@@ -1,4 +1,4 @@
-<h1 align="center">Gerenciamento de Pessoas</h1>
+<h1 align="center">Bilioteca Empresas Parceiras</h1>
 
 <p align="center">Plug Play! Referencie a bilioteca em seu projeto e comece a utilizar</p>
 <br />
